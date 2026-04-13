@@ -1,5 +1,5 @@
-# Enterprise-Challenge---Sprint-1
-Enterprise Challenge - Sprint 1 - DASA
+# Enterprise Challenge - Sprint 1 - DASA
+
 # FIAP - Inteligência artificial e data science
 
 <p align="center">
