@@ -57,6 +57,7 @@ Para que a solução entregue valor real, mapeamos três perfis que interagem co
 - **Necessidade:** Estruturação de dados para escala e inteligência de negócio.
 - **O que busca:** Transformar PDFs estáticos em dados tabulares para identificar tendências populacionais de saúde e melhorar o produto.
 
+<br>
 
 
 ## 📊 4. Estruturação dos Dados (Modelo JSON)
@@ -104,6 +105,7 @@ Abaixo, apresentamos a proposta de como o motor de extração (ETL) converterá 
   ]
 }
 ```
+<br>
 
 
 ## 🔧 5. Arquitetura e Pipeline
@@ -121,6 +123,7 @@ O fluxo de processamento segue o pipeline abaixo:
      * **Vector DB:** Armazenamento para busca semântica.
 
 - **5.5.  Interface:** Chatbot interativo que utiliza uma LLM para responder às dúvidas do usuário com base no contexto do seu DNA.
+<br>
 
 
 ## 🤖 6. Inteligência Artificial (Ideia Geral)
@@ -132,8 +135,9 @@ A nossa solução utiliza modelos de linguagem de última geração (LLMs) combi
 * **Interatividade (Q&A):** O sistema permite que o usuário faça perguntas diretas ao seu relatório, como: *"Quais vitaminas meu corpo tem dificuldade de absorver?"* ou *"Explique meu resultado para intolerância à lactose"*. A IA busca a resposta exclusivamente nos dados estruturados do paciente, garantindo precisão e personalização.
 
 Ao invés de apenas analisar dados, a Inteligência Artificial torna-se a **interface de acesso ao conhecimento**, transformando um documento estático em uma consultoria de saúde interativa.
+<br>
 
-## 🚀 Próximos passos
+## 🚀 7. Próximos passos
 
 Com o escopo do projeto já bem elaborado, as próximas etapas consistem em tirar toda essa idéia do papel e transformar em uma plataforma responsiva, com um front-end interativo e funcional, além da integração ao banco de dados o funcionamento total da plataforma. Além disso, uma etapa crucial antes da entrega completa do projeto é o refinamento do modelo.
 
