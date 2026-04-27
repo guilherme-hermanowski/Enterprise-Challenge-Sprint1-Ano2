@@ -1,5 +1,3 @@
-# Enterprise Challenge - Sprint 1 - DASA
-
 # FIAP - Inteligência artificial e data science
 
 <p align="center">
@@ -8,7 +6,7 @@
 
 <br>
 
-# Nome do projeto
+# Enterprise Challenge - Sprint 1 - DASA
 Cap 2 - Colheita de Dados e Insights - dados valiosos e maduros - Enterprise Challenge - Sprint 1
 
 ## Nome do grupo
