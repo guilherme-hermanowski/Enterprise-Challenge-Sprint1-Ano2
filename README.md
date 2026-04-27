@@ -20,7 +20,7 @@ Cap 2 - Colheita de Dados e Insights - dados valiosos e maduros - Enterprise Cha
 
 ## 👩‍🏫 Professores:
 ### Tutor(a) 
-- <a href="https://www.linkedin.com/company/inova-fusca">Leonardo Ruiz Orabona</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">Caique Nonato da Silva Bezerra</a>
 ### Coordenador(a)
 - <a href="https://www.linkedin.com/company/inova-fusca">ANDRÉ GODOI CHIOVATO</a>
 
