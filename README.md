@@ -25,7 +25,7 @@ Cap 2 - Colheita de Dados e Insights - dados valiosos e maduros - Enterprise Cha
 - <a href="https://www.linkedin.com/company/inova-fusca">ANDRÉ GODOI CHIOVATO</a>
 
 
-## 📜 Justificativa do problema
+## 📜 1. Justificativa do problema
 
 Atualmente, relatórios e laudos médicos entregues aos pacientes após exames ou consultas são redigidos em uma linguagem altamente técnica, o que dificulta sua compreensão. Na maioria dos casos, os pacientes não possuem o conhecimento necessário para interpretar corretamente essas informações, o que gera dúvidas sobre seu próprio quadro clínico. Como consequência, torna-se necessária a intervenção de um profissional de saúde para esclarecer o conteúdo, contribuindo ainda mais para a sobrecarga já existente desses profissionais.
 
