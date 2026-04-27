@@ -148,7 +148,7 @@ Com o escopo do projeto já bem elaborado, as próximas etapas consistem em tira
 
 ## 🎥 8. Vídeo
 
-
+- <a href="https://youtu.be/itTuvuUSilk">Link do vídeo
 
 <br>
 
