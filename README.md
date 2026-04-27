@@ -10,11 +10,11 @@
 Cap 2 - Colheita de Dados e Insights - dados valiosos e maduros - Enterprise Challenge - Sprint 1
 
 ## Nome do grupo
-39
+41
 
 ## 👨‍🎓 Integrantes: 
 - <a href="https://www.linkedin.com/company/inova-fusca">Guilherme Campos Hermanowski </a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Gabriel Viel </a>
+- <a href="https://www.linkedin.com/company/inova-fusca">Fatima Candal</a>
 - <a href="https://www.linkedin.com/company/inova-fusca"> Matheus Alboredo Soares</a> 
 - <a href="https://www.linkedin.com/company/inova-fusca">Jonathan Willian Luft </a>
 
