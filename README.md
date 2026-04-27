@@ -32,6 +32,7 @@ Cap 2 - Colheita de Dados e Insights - dados valiosos e maduros - Enterprise Cha
 <br>
 Atualmente, relatórios e laudos médicos entregues aos pacientes após exames ou consultas são redigidos em uma linguagem altamente técnica, o que dificulta sua compreensão. Na maioria dos casos, os pacientes não possuem o conhecimento necessário para interpretar corretamente essas informações, o que gera dúvidas sobre seu próprio quadro clínico. Como consequência, torna-se necessária a intervenção de um profissional de saúde para esclarecer o conteúdo, contribuindo ainda mais para a sobrecarga já existente desses profissionais.
 
+</p>
 <br>
 
 Diante desse cenário, propomos uma plataforma baseada em **RAG (Retrieval-Augmented Generation)**, que atua como uma ponte entre o conteúdo técnico dos documentos (como PDFs) e o entendimento do usuário. A solução vai além da simples extração de dados: ela contextualiza informações, explica possíveis riscos e sugere hábitos preventivos de forma clara, acessível e interativa.
