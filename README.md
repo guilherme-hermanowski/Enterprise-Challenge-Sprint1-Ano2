@@ -99,11 +99,20 @@ Abaixo, apresentamos a proposta de como o motor de extração (ETL) converterá 
     }
   ]
 }
-## 📁 Arquitetura e Pipeline
-
-![Pipeline AWS](https://github.com/user-attachments/assets/5eab299f-b2ad-4ea4-81e9-da8b4054551b)
+```
 
 
+## 🔧 5. Arquitetura e Pipeline
+
+O fluxo de processamento segue o pipeline abaixo:
+
+5.1.  **Ingestão:** Upload do arquivo PDF (Relatório Genera).
+5.2.  **Extração (ETL):** Processamento do documento via bibliotecas de extração de texto e tabelas (ex: PyMuPDF/Camelot).
+5.3.  **Estruturação:** Conversão dos dados não estruturados para formato **JSON**, categorizando riscos, genes e recomendações.
+5.4.  **IA e RAG:**
+    * **Embeddings:** Fragmentação e vetorização dos dados.
+    * **Vector DB:** Armazenamento para busca semântica.
+5.5.  **Interface:** Chatbot interativo que utiliza uma LLM para responder às dúvidas do usuário com base no contexto do seu DNA.
 
 
 ## 🔧 Funcionamento
