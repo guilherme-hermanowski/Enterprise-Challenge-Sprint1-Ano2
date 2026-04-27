@@ -54,8 +54,8 @@ Para que a solução entregue valor real, mapeamos três perfis que interagem co
 </p>
 
 **O Analista de Dados (Dasa/Genera):**
-    * **Necessidade:** Estruturação de dados para escala e inteligência de negócio.
-    * **O que busca:** Transformar PDFs estáticos em dados tabulares para identificar tendências populacionais de saúde e melhorar o produto.
+- **Necessidade:** Estruturação de dados para escala e inteligência de negócio.
+- **O que busca:** Transformar PDFs estáticos em dados tabulares para identificar tendências populacionais de saúde e melhorar o produto.
 
 
 
@@ -114,7 +114,7 @@ O fluxo de processamento segue o pipeline abaixo:
 
 - **5.2.  Extração (ETL):** Processamento do documento via bibliotecas de extração de texto e tabelas (ex: PyMuPDF/Camelot).
 
-- **5.3.  *Estruturação:** Conversão dos dados não estruturados para formato **JSON**, categorizando riscos, genes e recomendações.
+- **5.3.  Estruturação:** Conversão dos dados não estruturados para formato **JSON**, categorizando riscos, genes e recomendações.
 
 - **5.4.  IA e RAG:**
      * **Embeddings:** Fragmentação e vetorização dos dados.
