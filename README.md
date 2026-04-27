@@ -125,6 +125,9 @@ O fluxo de processamento segue o pipeline abaixo:
 - **5.5.  Interface:** Chatbot interativo que utiliza uma LLM para responder às dúvidas do usuário com base no contexto do seu DNA.
 <br>
 
+<img width="1461" height="398" alt="image" src="https://github.com/user-attachments/assets/19736a0d-74c6-4849-a866-d5ba8b31ef60" />
+
+<br>
 
 ## 🤖 6. Inteligência Artificial (Ideia Geral)
 
