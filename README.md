@@ -59,7 +59,7 @@ Para que a solução entregue valor real, mapeamos três perfis que interagem co
 
 
 
-### 📊 4. Estruturação dos Dados (Modelo JSON)
+## 📊 4. Estruturação dos Dados (Modelo JSON)
 
 Abaixo, apresentamos a proposta de como o motor de extração (ETL) converterá as informações desestruturadas do PDF em um objeto **JSON**. Esta estrutura é o "cérebro" que permite à IA realizar buscas rápidas e precisas através de RAG:
 
@@ -123,25 +123,19 @@ O fluxo de processamento segue o pipeline abaixo:
 - **5.5.  Interface:** Chatbot interativo que utiliza uma LLM para responder às dúvidas do usuário com base no contexto do seu DNA.
 
 
-## 🔧 Funcionamento
+## 🤖 6. Inteligência Artificial (Ideia Geral)
 
-O sistema utiliza uma arquitetura de monitoramento inteligente na AWS, integrando sensores físicos, banco de dados, machine learning e notificações automatizadas. O ESP32 envia dados de sensores (volume de produção, temperatura, umidade e vibração) via MQTT para o AWS IoT Core, com comunicação segura por TLS e autenticação por certificados. Esses dados são roteados para uma função AWS Lambda, que grava as informações no Amazon RDS, um banco relacional gerenciado e seguro.
+A nossa solução utiliza modelos de linguagem de última geração (LLMs) combinados com a técnica de **RAG (Retrieval-Augmented Generation)** para atuar como uma interface inteligente entre o dado técnico e o usuário. A IA desempenha três papéis fundamentais:
 
-Para viabilizar análises futuras e separar a carga operacional da base produtiva, os dados do RDS são exportados para o Amazon S3. Esse armazenamento forma o Data Lake, com controle de acesso gerenciado pelo AWS Lake Formation. A chegada de novos dados no S3 aciona automaticamente uma função AWS Lambda (via gatilho), que faz o pré-processamento utilizando Python e bibliotecas como pandas e boto3, e em seguida envia os dados ao Amazon SageMaker.
+* **Resumo Inteligente:** Em vez de percorrer dezenas de páginas, a IA sintetiza os pontos críticos do relatório, destacando o que é prioritário para a saúde do usuário de forma imediata.
+* **Tradução de Complexidade:** A IA atua como um "tradutor técnico", explicando conceitos genéticos complexos (como variantes genéticas e alelos) através de analogias simples e linguagem acessível, eliminando a confusão causada pelo "mediquês".
+* **Interatividade (Q&A):** O sistema permite que o usuário faça perguntas diretas ao seu relatório, como: *"Quais vitaminas meu corpo tem dificuldade de absorver?"* ou *"Explique meu resultado para intolerância à lactose"*. A IA busca a resposta exclusivamente nos dados estruturados do paciente, garantindo precisão e personalização.
 
-O Amazon SageMaker realiza a inferência com modelos desenvolvidos em Python, utilizando bibliotecas como TensorFlow, scikit-learn, numpy e pandas, para detectar padrões e antecipar possíveis falhas operacionais. Os resultados podem ser armazenados no RDS ou encaminhados a outras funções Lambda para tomada de decisão.
+Ao invés de apenas analisar dados, a Inteligência Artificial torna-se a **interface de acesso ao conhecimento**, transformando um documento estático em uma consultoria de saúde interativa.
 
-Workflows mais complexos e decisões condicionais são coordenados por AWS Step Functions, que orquestram a sequência de chamadas e ações de forma estruturada.
+## 🚀 Próximos passos
 
-Para observabilidade, o Amazon CloudWatch coleta métricas e logs de todos os serviços envolvidos, como Lambda, SageMaker e Step Functions. Alarmes podem ser configurados para detectar falhas, tempos de resposta anormais ou comportamentos críticos, acionando o Amazon SNS para notificar os responsáveis via e-mail, SMS ou integração com sistemas externos.
-
-## 👨‍🎓 Divisão de responsabilidades:
-- Arquitetura (Pipeline e estrutura de features na AWS) : <a href="https://www.linkedin.com/company/inova-fusca">Gabriel Viel </a>
-- Coleta de dados: <a href="https://www.linkedin.com/company/inova-fusca">Jonathan Willian Luft </a> e <a href="https://www.linkedin.com/company/inova-fusca">Guilherme  Campos Hermanowski </a>
-- Banco de Dados: <a href="https://www.linkedin.com/company/inova-fusca">Gabriel Viel </a>
-- Treinamento de IA: <a href="https://www.linkedin.com/company/inova-fusca"> Matheus Alboredo Soares</a> 
-- Integração de Features: <a href="https://www.linkedin.com/company/inova-fusca">Gabriel Viel </a>, <a href="https://www.linkedin.com/company/inova-fusca"> Matheus Alboredo Soares</a>, <a href="https://www.linkedin.com/company/inova-fusca">Jonathan Willian Luft </a> e <a href="https://www.linkedin.com/company/inova-fusca">Guilherme  Campos Hermanowski </a>
-
+Com o escopo do projeto já bem elaborado, as próximas etapas consistem em tirar toda essa idéia do papel e transformar em uma plataforma responsiva, com um front-end interativo e funcional, além da integração ao banco de dados o funcionamento total da plataforma. Além disso, uma etapa crucial antes da entrega completa do projeto é o refinamento do modelo.
 
 
 ## 📋 Licença
