@@ -144,6 +144,13 @@ Ao invés de apenas analisar dados, a Inteligência Artificial torna-se a **inte
 
 Com o escopo do projeto já bem elaborado, as próximas etapas consistem em tirar toda essa idéia do papel e transformar em uma plataforma responsiva, com um front-end interativo e funcional, além da integração ao banco de dados o funcionamento total da plataforma. Além disso, uma etapa crucial antes da entrega completa do projeto é o refinamento do modelo.
 
+<br>
+
+## 🎥 8. Vídeo
+
+
+
+<br>
 
 ## 📋 Licença
 
