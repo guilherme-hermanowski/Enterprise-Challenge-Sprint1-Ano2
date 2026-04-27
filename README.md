@@ -37,21 +37,25 @@ Diante desse cenário, propomos uma plataforma baseada em **RAG (Retrieval-Augme
 
 <br>
 
-### 👥 3. Perfis de Usuário (User Personas & Needs)
+## 👥 3. Perfis de Usuário (User Personas & Needs)
 
 Para que a solução entregue valor real, mapeamos três perfis que interagem com os dados da Genera, cada um com objetivos distintos:
+
+</p>
 
 * **O Paciente (Leigo):**
     * **Necessidade:** Tradução de termos técnicos (ex: "polimorfismo", "variante") para uma linguagem cotidiana e acessível.
     * **O que busca:** Respostas práticas como "O que devo mudar na minha dieta?" ou "Qual o resumo do meu risco para doenças?".
+</p>
 * **O Médico (Especialista):**
     * **Necessidade:** Síntese e precisão. O profissional não dispõe de tempo para ler relatórios de 50 páginas durante a consulta.
     * **O que busca:** Um sumário executivo com biomarcadores alterados e níveis de evidência científica para embasar a conduta clínica.
+</p>
 * **O Analista de Dados (Dasa/Genera):**
     * **Necessidade:** Estruturação de dados para escala e inteligência de negócio.
     * **O que busca:** Transformar PDFs estáticos em dados tabulares para identificar tendências populacionais de saúde e melhorar o produto.
 
----
+
 
 ### 📊 4. Estruturação dos Dados (Modelo JSON)
 
