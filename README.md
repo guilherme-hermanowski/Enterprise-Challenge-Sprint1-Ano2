@@ -54,8 +54,8 @@ Para que a solução entregue valor real, mapeamos três perfis que interagem co
 </p>
 
 **O Analista de Dados (Dasa/Genera):**
-    -**Necessidade:** Estruturação de dados para escala e inteligência de negócio.
-    -**O que busca:** Transformar PDFs estáticos em dados tabulares para identificar tendências populacionais de saúde e melhorar o produto.
+    * **Necessidade:** Estruturação de dados para escala e inteligência de negócio.
+    * **O que busca:** Transformar PDFs estáticos em dados tabulares para identificar tendências populacionais de saúde e melhorar o produto.
 
 
 
