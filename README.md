@@ -29,18 +29,76 @@ Cap 2 - Colheita de Dados e Insights - dados valiosos e maduros - Enterprise Cha
 
 ## 📜 Justificativa do problema
 
-<br>
 Atualmente, relatórios e laudos médicos entregues aos pacientes após exames ou consultas são redigidos em uma linguagem altamente técnica, o que dificulta sua compreensão. Na maioria dos casos, os pacientes não possuem o conhecimento necessário para interpretar corretamente essas informações, o que gera dúvidas sobre seu próprio quadro clínico. Como consequência, torna-se necessária a intervenção de um profissional de saúde para esclarecer o conteúdo, contribuindo ainda mais para a sobrecarga já existente desses profissionais.
+
+<br>
 
 ## 💡 2. A Solução
 
 Diante desse cenário, propomos uma plataforma baseada em **RAG (Retrieval-Augmented Generation)**, que atua como uma ponte entre o conteúdo técnico dos documentos (como PDFs) e o entendimento do usuário. A solução vai além da simples extração de dados: ela contextualiza informações, explica possíveis riscos e sugere hábitos preventivos de forma clara, acessível e interativa.
 
-## 🔧 Componentes
+<br>
 
-  -	***Funcionamento:*** Se a inferência do SageMaker indicar uma condição anormal, o Lambda ou Step Function publica uma mensagem no SNS que é entregue ao responsável via email, sms ou por alguma aplicação.<br>
+### 👥 3. Perfis de Usuário (User Personas & Needs)
 
+Para que a solução entregue valor real, mapeamos três perfis que interagem com os dados da Genera, cada um com objetivos distintos:
 
+* **O Paciente (Leigo):**
+    * **Necessidade:** Tradução de termos técnicos (ex: "polimorfismo", "variante") para uma linguagem cotidiana e acessível.
+    * **O que busca:** Respostas práticas como "O que devo mudar na minha dieta?" ou "Qual o resumo do meu risco para doenças?".
+* **O Médico (Especialista):**
+    * **Necessidade:** Síntese e precisão. O profissional não dispõe de tempo para ler relatórios de 50 páginas durante a consulta.
+    * **O que busca:** Um sumário executivo com biomarcadores alterados e níveis de evidência científica para embasar a conduta clínica.
+* **O Analista de Dados (Dasa/Genera):**
+    * **Necessidade:** Estruturação de dados para escala e inteligência de negócio.
+    * **O que busca:** Transformar PDFs estáticos em dados tabulares para identificar tendências populacionais de saúde e melhorar o produto.
+
+---
+
+### 📊 4. Estruturação dos Dados (Modelo JSON)
+
+Abaixo, apresentamos a proposta de como o motor de extração (ETL) converterá as informações desestruturadas do PDF em um objeto **JSON**. Esta estrutura é o "cérebro" que permite à IA realizar buscas rápidas e precisas através de RAG:
+
+```json
+{
+  "metadados": {
+    "paciente_id_hash": "a7b8c9d0...", 
+    "data_relatorio": "2026-04-27",
+    "versao_painel": "Genera Premium 3.0"
+  },
+  "blocos_de_conhecimento": [
+    {
+      "categoria": "Saúde e Bem-Estar",
+      "topico": "Predisposição a Doenças",
+      "detalhes": [
+        {
+          "condicao": "Diabetes Tipo 2",
+          "risco_relativo": "Aumentado (1.8x)",
+          "genes_impactados": ["TCF7L2", "KCNJ11"],
+          "evidencia_cientifica": "Alta",
+          "insight_ia": "Sugerir redução de ingestão de carboidratos simples e monitoramento de hemoglobina glicada."
+        }
+      ]
+    },
+    {
+      "categoria": "Ancestralidade",
+      "composicao": [
+        { "regiao": "Europa Ocidental", "percentual": 58.4 },
+        { "regiao": "Nativo Americano", "percentual": 12.2 }
+      ]
+    },
+    {
+      "categoria": "Farmacogenética",
+      "medicamentos": [
+        {
+          "principio_ativo": "Varfarina",
+          "metabolismo": "Lento",
+          "alerta": "Risco aumentado de toxicidade; ajuste de dose necessário."
+        }
+      ]
+    }
+  ]
+}
 ## 📁 Arquitetura e Pipeline
 
 ![Pipeline AWS](https://github.com/user-attachments/assets/5eab299f-b2ad-4ea4-81e9-da8b4054551b)
